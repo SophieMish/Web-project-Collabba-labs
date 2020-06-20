@@ -1,0 +1,308 @@
+<html>
+  <head>
+    <style>
+			h3{
+				font-size: 100%;
+				color:rgb(194, 141, 141);
+				font-family:  Cambria;
+				text-align: left;
+        font-weight: bold;
+      
+			}
+			p{
+				font-size: 100%;
+				color: black;
+				font-weight: lighter;
+				font-style: normal;
+				font-family: Cambria;
+			}
+			a{
+				color: rgb(194, 141, 141);
+			}
+			hr{
+				color: #BC8F8F;
+			}
+
+		</style>
+  </head>
+<body>
+	<h3 class='h3'><strong>Оглавление:</strong>
+	<ul>
+		<li><a href="#1">Представление содержания элементов файловой системы (ls)</a></li>
+		<li><a href="#2">Создание и модифицирование сущностей (mkdir, mv, rm, cp)</a></li>
+		<li><a href="#3">Модифицирование файлов (cat)</a></li>
+		<li><a href="#4">Управление правами (chmod)</a></li>
+		<li><a href="#5">Управление кодировками файлов (iconv)</a></li>
+		<li><a href="#6">Межсерверный обмен данными (ftp)</a></li>
+		<li><a href="#7">Архивирование и сжатие файлов (bz2),cоздать tar.sh для автоматического (tar)</a></li>
+		<li><a href="#8">Дополнительная информация</a></li>
+	</ul>
+</h3>
+	<form  action="http://g05u48.nn2000.info/cgi-bin/form_action_file.py"  method='get' target='_self'>
+	<p>Фамилия: <input type="Text" name="last_name" value="Мишукова"   size=8 ></p>
+	<p>Имя: <input type="Text" name="name" value="Софья"   size=8 ></p>
+	<p>Группа: 
+			<input type="Radio" name="group" value="19BI-1">19БИ-1
+			<input type="Radio" name="group" value="19BI-2"checked>19БИ-2
+			<input type="Radio" name="group" value="19BI-3" >19БИ-3
+		</p>
+<h3 id="1">Представление содержания элементов файловой системы (ls)</h3>
+<hr color="#BC8F8F" width="1250" size="2">
+<p>
+  1) В цвете показать подробное описание всех сущностей домашнего раздела
+
+<br><br>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/ls/ls_home.PNG" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/ls/ls_home.PNG" alt="ls_home" height="50" width="100"></a>
+<br>Дается баллов за это задание:<input type="Text" name="ls_1" value="1" size=1> 
+</p>
+
+<p> 
+2) Показать содержание раздела cgi-bin с отражением особенностей представления сущностей типа папка, файл и др
+
+<br><br>
+<a href="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/ls/ls_home_cgi-bin.PNG" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/ls/ls_home_cgi-bin.PNG" alt="ls_home_cgi-bin" height="50" width="100"></a>
+<br>Дается баллов за это задание:<input type="Text" name="ls_home_cgi-bin" value="1" size=1> 
+</p>
+
+<p>  
+3) Показать содержание   public_html  с реверсивной сортировкой сущностей  по времени последнего изменения
+
+<br><br>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/ls/ls_home_public_html.PNG" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/ls/ls_home_public_html.PNG" alt="ls_home_public_html" height="50" width="100"></a>
+<br>Дается баллов за это задание:<input type="Text" name="ls_home_public_html" value="1" size=1> 
+</p>
+
+
+<br>
+
+<!------------------------------------------->
+<h3 id="2">Создание и модифицирование сущностей (mkdir, mv, rm, cp)</h3>
+<hr color="#BC8F8F" width="1250" size="2">
+<p> 
+1) Cоздать ~/public_html/bash/r/r_1/r_1_01 
+<br>Cоздать ~/public_html/bash/r/r_1/r_1_02 
+<br>Скопировать r_1  в r_2
+
+<br><br>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/mkdir/script1.1.png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/mkdir/script1.1.png" alt="mkdir_1.png" height="50" width="100"></a>
+<br>Дается баллов за это задание:<input type="Text" name="mkdir_1" value="1" size=1> 
+</p>
+
+
+<p> 
+2) Рекурсивно показать наличие созданных сущностей (можно начиная с r2)
+
+<br><br>
+<a href="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/mkdir/script1.2.png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/mkdir/script1.2.png" alt="mkdir_2.png" height="50" width="100"></a>
+<br>Дается баллов за это задание:<input type="Text" name="mkdir_2" value="1" size=1> 
+
+</p>
+
+<p> 
+3) Выполнить удаление папки r (и  можно потвердить удаление)
+<br><br>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/mkdir/script1.3.PNG" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/mkdir/script1.3.PNG" alt="mkdir_3.png" height="50" width="100"></a>
+<br>Дается баллов за это задание:<input type="Text" name="mkdir_3" value="1" size=1> 
+</p>
+
+<br>
+
+<!--------------------------------------->
+<h3 id="3">Модифицирование файлов (cat)</h3>
+<hr color="#BC8F8F" width="1250" size="2">
+<p> 
+1) Нижеперечисленные строки записать в ~/public_html/bash/cat/cat_task.txt 
+<i>
+<br>
+<br>a.
+<br>b.abc
+<br>c.ABC
+<br>(! enter - пустая строка) 
+<br>(! enter - пустая строка)
+<br>(! enter - пустая строка)
+<br>d.
+<br>пробел
+<br>табуляция (tab)
+<br>e.abc
+<br>f.abc
+<br>g.
+<br>
+</i>
+<br>Отобразить содержимое  файла ~/public_html/bash/cat/cat_task.txt
+<br><br>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/cat/2020-03-14.png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/cat/2020-03-14.png" alt="cat_1.png" height="50" width="100"></a>
+<br>Дается баллов за это задание:<input type="Text" name="cat_1" value="1" size=1>
+</p>
+
+<p>
+2) Отобразить содержимое  файла ~/public_html/bash/cat/cat_task.txt, включая символы окончания строк
+<br><br>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/cat/2020-03-14%20(2).png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/cat/2020-03-14%20(2).png" alt="cat_2.png" height="50" width="100"></a>
+<br>Дается баллов за это задание:<input type="Text" name="cat_2" value="1" size=1>
+</p>
+
+<br>
+
+<!------------------------------------------------>
+<h3 id="4">Управление правами (chmod)</h3>
+<hr color="#BC8F8F" width="1250" size="2">
+<p>1) chmod
+<br>В ~/public_html/my_secret создать chmod.txt с содержанием типа: g05u00 изучаем chmod 
+<br>С использованием  браузера показать содержание созданного файле
+<br><br>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/chmod/chmod_1.PNG" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/chmod/chmod_1.PNG" alt="chmod_1.png " height="50" width="100"></a>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/chmod/chmod_1_browser.png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/chmod/chmod_1_browser.png" alt="chmod_1_browser.png" height="50" width="100"></a> 
+<br>Дается баллов за это задание:<input type="Text" name="chmod_1" value="1" size=1>
+</p>
+
+<p> 
+2) Запретить всем, кроме собственника чтение файла  
+<br>С использованием  браузера показать содержание созданного файле
+<br><br>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/chmod/chmod_2_forbidden_for_txt.png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/chmod/chmod_2_forbidden_for_txt.png" alt="chmod_2.png " height="50" width="100"></a>
+<br>Дается баллов за это задание:<input type="Text" name="chmod_2" value="1" size=1>
+</p>
+
+<p> 
+3) Запретить всем (кроме собственника -пока не делать)  (в том числе и членам группы) просмотр папки my_secret
+<br>С использованием  браузера продемонстрировать результат
+
+<br><br>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/chmod/chmod_3.png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/chmod/chmod_3.png" alt="chmod_3.png" height="50" width="100"></a> 
+<br>Дается баллов за это задание:<input type="Text" name="chmod_3" value="1" size=1>
+</p>
+
+<br>
+
+<!-------------------------------------------------->
+<h3 id="5">Управление кодировками файлов (iconv)</h3>
+<hr color="#BC8F8F" width="1250" size="2">
+<p> 
+1) Создать файл с содержанием типа
+<br>
+<br><i> 2000
+<br>время 14:00</i>
+<br>
+<br>Создать папки
+<br>~/public_html/education/iconv/utf-8/
+<br>~/public_html/education/iconv/cp1251/
+<br>Показать наличие созданных папок
+<br><br>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/iconv/iconv%20(2).png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/iconv/iconv%20(2).png" alt="iconv_01.png" height="50" width="100"></a>
+<br>Дается баллов за это задание:<input type="Text" name="iconv_01" value="1" size=1>
+</p>
+
+<p> 
+2) В соответствии с названиями папок  выполнить копирование и  дополнение  строкой  "кодировка cp1251" или "кодировка utf-8" и соответствующее кодирование ранее созданного файла
+<br>Последовательным отображением содержания  файлов доказать правильность копирования и кодирования
+<br><br>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/iconv/iconv%20(3).png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/iconv/iconv%20(3).png" alt="iconv_02.png" height="50" width="100"></a>
+<br>Дается баллов за это задание:<input type="Text" name="iconv_02" value="1" size=1>
+</p>
+
+<p> 
+3) Обеспечить корректное автоматическое отображение символов  в браузере (настроить .htaccess для соответствующих папок)
+
+<br><br>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/iconv/utf-8_chrome.png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/iconv/utf-8_chrome.png" alt="iconv_03_utf-8.png" height="50" width="100"></a>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/iconv/cp1251_chrome_uncorrect.png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/iconv/cp1251_chrome_uncorrect.png" alt="iconv_03_cp1251_uncorrect" height="50" width="100"></a>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/iconv/cp1251_chrome_.png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/iconv/cp1251_chrome_.png" alt="iconv_03_cp1251" height="50" width="100"></a>
+<br>Дается баллов за это задание:<input type="Text" name="cp1251_utf8" value="1" size=1>
+</p>
+
+<br>
+
+<!-------------------------------------------------->
+<h3 id="6">Межсерверный обмен данными (ftp)</h3>
+<hr color="#BC8F8F" width="1250" size="2">
+
+<p> 
+1) ftp ftp.drivehq.com
+<br>~/public_html/education/ftp
+<br>
+<br>Зарегистрироваться на drivehq.com и в папке My Documents создать файл с содержанием типа
+<i>
+<br>
+<br>date 2000
+<br>время 14:00
+<br>from drivehq.com
+<br>
+</i>
+<br>Используя ftp показать подробное содержимое  папки  My Documents на drivehq.com 
+<br><br>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/ftp/Start_work_with_ftp.PNG" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/ftp/Start_work_with_ftp.PNG" alt="drivehq_00.png" height="50" width="100"></a>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/ftp/ls_MyDocuments_drivehq_txt_01.PNG" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/ftp/ls_MyDocuments_drivehq_txt_01.PNG" alt="drivehq_01.png" height="50" width="100"></a>
+<br>Дается баллов за это задание:<input type="Text" name="drivehq_01" value="1" size=1>
+</p>
+
+<p>  
+2) Загрузить drivehq.png в  My Pictures на drivehq.com
+<br>Используя ftp и ftp.drivehq.com скопировать созданный файл в ~/public_html/education/ftp  и показать содержимое этого файла в браузере
+<br><br>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/ftp/load_file_to_server.PNG" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/ftp/load_file_to_server.PNG" alt="drivehq_02.png" height="50" width="100"></a>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/ftp/ls_MyDocuments_drivehq_txt_02.png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/ftp/ls_MyDocuments_drivehq_txt_02.png" alt="cat_1.png" height="50" width="100"></a>
+<br>Дается баллов за это задание:<input type="Text" name="drivehq_02" value="1" size=1>
+</p>
+
+<br>
+
+<!-------------------------------------------------->
+<h3 id="7">Архивирование и сжатие файлов</h3>
+<hr color="#BC8F8F" width="1250" size="2">
+
+<p> 
+1) Cоздать копию  /education и назвать ее /education_old 
+<br>В  /education/tar создать  архив папки  /education_old и назвать его /education_old.tar. 
+<br>education_old.tar сжать  по алгаритму Хаффмана (bzip2/bz2)   и назвать его education_old.tar.bz2
+<br>Используя  ls  показать размеры созданных файлов в байтах  
+<br><br>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/tar/tar.bz1..png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/tar/tar.bz1..png" alt="tar.bz1.png" height="50" width="100"></a>
+<br>Дается баллов за это задание:<input type="Text" name="tarbz1" value="1" size=1>
+</p>
+
+<p> 
+2) Создать архив основных папок и конфигурационных файлов домашнего раздела в ~/tmp/home.bz2
+<br>Загрузить созданный архив на удаленный сервер в My Documents и показать  его наличие в папке 
+<br><br>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/tar/home.bz2.png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/tar/home.bz2.png" alt="home.bz2.0.png" height="50" width="100"></a>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/tar/home.bz2.1.PNG" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/tar/home.bz2.1.PNG" alt="home.bz2.1.png" height="50" width="100"></a>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/tar/home.bz2.2.png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/tar/home.bz2.2.png" alt="home.bz2.2.png" height="50" width="100"></a>
+<br>Дается баллов за это задание:<input type="Text" name="homebz2" value="1" size=1>
+
+</p>
+
+<p> 
+
+3) Извлечь содержание архива в ~/js и показать рекурсивно подробное содержание ~/js
+<br><br>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/tar/home.bz3.png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/tar/home.bz3.png" alt="home.bz3.0.png" height="50" width="100"></a>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/tar/home.bz3.2.png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/tar/home.bz3.2.png" alt="home.bz3.1.png" height="50" width="100"></a>
+<a href = "http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/tar/home.bz3.3.png" target="_self"><img src="http://g05u48.nn2000.info/img/%d0%a1%d0%bd%d0%b8%d0%bc%d0%ba%d0%b8%20%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0/tar/home.bz3.3.png" alt="home.bz3.2.png" height="50" width="100"></a>
+<br>Дается баллов за это задание:<input type="Text" name="homebz3" value="1" size=1>
+</p>
+<br>
+
+<p id="8">
+	<hr color="#BC8F8F" width="1250" size="2">
+	<font style="color: rgb(151, 112, 112);">
+	Дополнительная информация: 
+	<br><TEXTAREA name="info" rows=2 cols=14>Для заметок</TEXTAREA>
+	<br> Пароль: <input type="Password" name="password" value="123"  size=9>
+<!--Все нижерасположенные фрагменты перемещать нельзя, редактировать можно-->
+	<br> Название файла: <input type="Техт" name="000_file_name" value="g05u48.txt" >
+	<br>Тип записи в файл:
+		<select name="010_mode">
+			<OPTION value="a">a - дозаписать в файл</OPTION> 
+			<OPTION value="w">w - очисить файл и записать в файл</OPTION> 
+		</select>
+	</font>
+</p>
+ 	<input type="hidden" name="function" value="page">
+	<input type="hidden" name="page_id" value="3">
+<p> 
+	<input type="Reset"  name="Reset" value="Обновить">
+	<input type="Submit" name="submit" value="Отправить">
+</p>
+</form>
+</body>
+</html>
