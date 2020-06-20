@@ -1,0 +1,75 @@
+body{
+    font-size: 30px;
+    background-color: #FFF0F5
+    
+}
+.main_text{
+    font-size: 20px;
+    color:black;
+    font-family: 'Poiret One', cursive;
+    text-align: left;
+    font-weight: bold;
+
+}
+h3{
+    font-size: 100%;
+    color:black;
+    font-family: 'Poiret One', cursive;
+    text-align: left;
+    font-weight: bold;
+
+}
+ol{
+    padding-top: 10px;
+}
+ul{
+    margin: 5px;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+p{
+    font-size: 100%;
+    color: black;
+    font-weight: lighter;
+    font-style: normal;
+    font-family: 'Poiret One', cursive;
+}
+.h3{
+    font-size: 19px;
+    color:#BC8F8F;
+    font-family: 'Poiret One', cursive;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid rgb(194, 141, 141);
+    background-color: white;
+
+}
+.h{
+    font-size: 19px;
+    color:#BC8F8F;
+    font-family: 'Poiret One', cursive;
+
+}
+h1{
+    font-size: 100%;
+    color:black;
+    font-family: 'Poiret One', cursive;
+    text-align: left;
+    font-weight: bold;
+}
+a { color:#BC8F8F; 
+    background-color:rgb(199, 184, 207)r;
+    border: 1px dashed rgb(194, 141, 141);
+    padding: 6px 28px 4px 27px; 
+}
+a:hover {
+    color: rgb(194, 141, 141); 
+    background-color:white; 
+    text-decoration-line: none;
+    text-decoration: none;
+    padding: 6px 28px 4px 27px; 
+    border: 1px solid rgb(194, 141, 141);
+    
+}
+

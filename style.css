@@ -1,0 +1,420 @@
+html{
+    width: 100%;
+    overflow-x: hidden;
+    justify-content: center;
+    
+   
+}
+body{
+    justify-content:center;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: fit-content;
+   
+}
+/**scroll*/
+::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:5px;
+    height:0px
+    }
+    
+    ::-webkit-scrollbar-track {
+    background-color:linear-gradient(to right, #ffffff -27%, #ffc0cb 100%);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 30px;
+    background-color:#BC8F8F;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover{
+    background-color:#BC8F8F;
+    }
+    
+    ::-webkit-scrollbar{
+    width: 4px;
+    }
+/*-----------------------*/
+.logo{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-color: white;
+    margin-bottom:-130px;
+}
+.header{
+    background-color: white;
+    margin: auto;
+    box-sizing: 70px;   
+    justify-content: center; 
+}
+/*division into upper sections*/
+.section1{
+    width: 100%;
+    height: 32px;
+    margin:-270px 0 5px 0;
+    justify-content: center;
+    background: linear-gradient(to right, #ffffff -27%, #ffc0cb 100%);
+}
+
+
+.section2{
+    height: 1600px;
+    background: linear-gradient(to bottom, #ffffff 50%, #ffc0cb 145%);
+    justify-content: center;
+    width: 100%;
+    margin:auto;
+    margin-top: 0px;
+    overflow: hidden;
+}
+
+/*head menu*/
+ul.top-bar {
+    margin-top: 0px; 
+    padding-top: 5px; 
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 100px;
+    justify-content: center;
+   }
+ul.top-bar li {
+    display: inline; 
+    margin-right: 10px;
+    padding: 6px 35px 4px 35px; 
+    color: #BC8F8F;
+    border: 2px solid transparent;
+   /* box-shadow: 0.2em 0.4em 4px  Gainsboro;*/
+}
+a:link{
+ text-decoration: none;
+ color: #BC8F8F;
+ text-decoration-color: #BC8F8F;      
+}
+
+a:hover {
+    text-decoration-color: rgb(172, 162, 177); /* Делает ссылку подчеркнутой при наведении на нее курсора */
+    color: rgb(199, 184, 207);
+}
+ a:visited{
+    color:  rgb(143, 113, 113);
+}    
+ul.top-bar li:hover {border: 1px solid #BC8F8F;}
+ul.top-bar li: {border: 1px solid #BC8F8F;}
+/*animation for logo*/
+.svg-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-92%);
+    margin: 140px auto ;
+    width: 320px;  
+}
+.shape {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: #BC8F8F;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text-animation {
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 8px;
+    color: #fff;
+    top: -50px;
+    position: relative;
+}
+.svg-wrapper:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+}
+
+
+/*animation for text*/
+.caption-style-2 {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
+    box-shadow: 0.2em 0.4em 4px  Gainsboro;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    justify-content: center;
+    }
+    .caption-style-2 li {
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    }
+    .caption-style-2 li:hover .caption2 {
+    opacity: 5;
+    
+    }
+    .caption-style-2 img {
+    margin: 0px;
+    padding: 0px;
+    padding-right: 5px;
+    float: left;
+    z-index: 4;
+    margin-top: 0px;
+    margin-left: 2px;
+    }
+    .caption-style-2 .caption2 {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 0.45s ease-in;
+    -moz-transition: all 0.45s ease-in;
+    -o-transition: all 0.45s ease-in;
+    -ms-transition: all 0.45s ease-in;
+    transition: all 0.45s ease-in;
+    }
+    .caption-style-2 .blur2 {
+    background-color: rgb(188, 143, 143,0.45);
+    height: 440px;
+    width: 1300px;
+    z-index: 3;
+    position: absolute;
+    }
+    .caption-style-2 .caption-text2 h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+    
+    }
+    .caption-style-2 .caption-text2 {
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    text-align: center;
+    top: 10px;
+    margin-left: 155px;
+    }
+
+/*animation for images*/
+.caption-style-1 {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
+    box-shadow: 0.2em 0.4em 4px  Gainsboro;
+    margin-left: -30px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    }
+    .caption-style-1 li {
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    }
+    .caption-style-1 li:hover .caption {
+    opacity: 1;
+    }
+    .caption-style-1 img {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    z-index: 4;
+    }
+    .caption-style-1 .caption {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 0.45s ease-in-out;
+    -moz-transition: all 0.45s ease-in-out;
+    -o-transition: all 0.45s ease-in-out;
+    -ms-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+    }
+    .caption-style-1 .blur {
+    background-color: rgb(188, 143, 143,0.45);
+    height: 400px;
+    width: 900px;
+    z-index: 5;
+    position: absolute;
+    }
+    .caption-style-1 .caption-text h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+    }
+    .caption-style-1 .caption-text {
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    top: 100px;
+    }
+    
+/*---------------------------------------------------------------*/
+.main-link{
+    margin-top: 328px;
+    margin-left: 230px;
+}
+.main-link2{
+    margin-top: 15px;
+    margin-left: 245px;
+}
+.footer{
+    font-family:'Raleway',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+    display: inline; 
+    margin-right: 5px;
+    padding: 3px 22px 2px 22px; 
+    color: #BC8F8F;
+    overflow: hidden;
+    margin-right: -1000px;
+    width: 100%;
+    justify-content: center;
+    height: 30px;
+
+}
+ul.footer-bar {
+    margin-top: 0; 
+    padding-top: 0px; 
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 90px;
+    margin-top: auto;
+   }
+ul.footer-bar li {
+    display: inline; 
+    margin-right: 5px;
+    padding: 5px 22px 5px 22px; 
+    color: #BC8F8F;
+}
+   
+    
+ul.footer-bar li:hover{
+    text-decoration-color: rgb(172, 162, 177); /* Делает ссылку подчеркнутой при наведении на нее курсора */
+    color: rgb(199, 184, 207);
+}
+
+.copyright{
+    margin: 15px 30% 0px 40%;
+
+}
+.img_contacts{
+    margin:0px 50% 0px 50%;
+    justify-content: center;
+
+}
+/*media*/
+@media screen and (max-width: 930px) { /* это будет показано при разрешении монитора до 930 пикселей */
+    .footer{
+        display: none;
+    }
+    ul.footer-bar {
+       display: none;
+       }
+    ul.footer-bar li {
+        display: none;
+    }
+    .copyright{
+        width: 100%;
+        margin:auto;
+    }
+    .caption-style-2 {
+        display: none;
+        }
+
+  }
+  
+  @media screen and (max-width: 930px) and (min-width: 470px) {  /* для разрешения экрана от 470 до 930 пикселей */
+    .footer{
+        display: none;
+    }
+    ul.footer-bar {
+       display: none;
+       }
+    ul.footer-bar li {
+        display: none;
+    }
+    .copyright{
+        width: 100%;
+        margin:auto;
+    }
+    .caption-style-2 {
+        display: none;
+        }
+  }
+  
+  @media screen and  (max-width: 469px) { 
+    body {font: .9em/1em "Helvetica Neue",Arial,Helvetica,sans-serif;} /* меняется шрифт */
+    .footer{
+        display: none;
+    }
+    ul.footer-bar {
+       display: none;
+       }
+    ul.footer-bar li {
+        display: none;
+    }
+    .header{
+        background-color: white;
+        margin: auto;
+        box-sizing: 70px;   
+        justify-content: center; 
+    }
+    .section1{
+        width: 100%;
+        height: 0px;
+        margin-left: -100px;
+        margin-bottom: 0em;
+        justify-content: center;
+        background: linear-gradient(to right, #ffffff -27%, #ffc0cb 100%);
+        margin-top: -270px;
+        position:fixed;
+        z-index: 1;
+    }
+    .section2{
+        height: 1600px;
+        background: linear-gradient(to bottom, #ffffff 50%, #ffc0cb 145%);
+        justify-content: center;
+        width: 100%;
+        margin:auto;
+        margin-top: -270px;
+        overflow: hidden;
+    }
+    ul.top-bar {
+        margin-top: 0px; 
+        padding-top: 5px; 
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        margin-left: 90px;
+        justify-content: center;
+       }
+    ul.top-bar li {
+        display: flex;
+        margin-right: 5px;
+        margin-left: 0px;
+        padding: 6px 22px 4px 22px; 
+        color: white;
+        border: 2px solid transparent;
+        filter: sepia(100%);
+       /* box-shadow: 0.2em 0.4em 4px  Gainsboro;*/
+    }
+    
+    .copyright{
+        width: 100%;
+        margin:auto;
+    }
+    .caption-style-2 {
+        display: none;
+        }
+  }
+
